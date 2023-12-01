@@ -22,7 +22,7 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            font-family: 'Your Chosen Font', sans-serif;
+          
         }
     
        ul{
@@ -42,7 +42,66 @@
             display: inline;
             margin-right: 20px;
         }
-    
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 15px;
+        }
+    form{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        } 
+
+  label{
+        text-align: center;
+        font-size: 25px;
+        }
+   input {
+        display: flex;
+        flex-direction: center;
+        width: 500px ;
+        height: fit-content;
+        margin: auto;
+        border: 2px solid #333;
+        border-width: 3px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+        
+        }    
+    textarea{
+        display: flex;
+        flex-direction: center;
+        width: 500px ;
+        height: fit-content;
+        margin: auto;
+        border: 2px solid #333;
+        border-width: 3px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+        margin: auto;
+    }    
+        button {
+
+        background-color: red;
+        display: flex;
+        flex-direction: center;
+        width: 500px ;
+        height: fit-content;
+        margin: auto; 
+        border-width: 3px;
+        box-sizing: border-box;
+        width: 500px;
+        height: auto;
+        line-height: normal;
+        word-spacing: normal;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        padding: 16px 30px
+    }
     </style>
 </head>
 
@@ -52,12 +111,54 @@
     <nav>
         <ul>
             <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="informacion-general.html">Informacion</a></li>
+            <li><a href="informacion-general.html">Información</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
 </Header>
-    <!-- Rest of your content for the "Contacto" page goes here -->
+
+<h2>Contáctanos</h2>
+
+<form>
+  
+    <label for="textNombre">Nombre:</label>
+
+    <input type="text"
+    name="txtNombre"
+    id="txtNombre"
+    placeholder="Nombre Apellido"
+    required>
+
+    <label for="tel">Teléfono:</label>
+
+    <input type="tel"
+    name="txtTel"
+    id="txtTel"
+    placeholder="###-###-####"
+    pattern="^\{10$}"
+    required>
+
+    <label for="txtCorreo">Correo:</label>
+
+    <input type="txtCorreo"
+    name="Correo"
+    id="Correo"
+    placeholder="nombre@dominio.com"
+    required>
+
+    <label for="txtMensaje">Mensaje:</label>
+
+    <textarea name="txtMensaje" id="txtMensaje" cols="10" rows="10">Dudas, Comentarios o Quejas</textarea>
+    <br>
+    
+    <button type="submit">Enviar</button>
+    
+    <br>
+
+    <button type="reset">Limpiar</button>
+
+</form>
+    
    
 
 </body>
